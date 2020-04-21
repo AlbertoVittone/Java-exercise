@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strive Ignite - Week 3 // Day 2</title>
+</head>
+<body>
+    <h2>Inspect the page to find the excercises ;-)</h2>
+<ul> 
+    <li>1) Create function testMe that creates 3 variables and returns their product</li>​
+    <li>2) Create function AI that respond "hi" if the parameter is "hello", "I cannot understand" otherwise</li> 
+    <li>3) Create function tripleSum that receives 3 numbers and returns the product of them</li>
+    <li>4) Create function factorial that calculates the factorial of the given param</li>
+    <li>5) Create function calculator with 3 params, two numbers (param1 and param2) and a sign between "+","-","*","/". Return the operation between param1 and param2</li>
+    <li>6) Create function absolute that returns the absolute value of the parameter (es.: p = 1 returns 1, p = -27 returns 27)</li>
+    <li>7) Create function fizzBuzz that returns fizz if param is multiple of 3, buzz if multiple of 7, fizzbuzz if multiple of 3 and 7. Otherwise returns the same number</li>
+    <li>8) Create function positive that returns true if the params is greater than 0</li>
+    <li>9) Create function transform that receives a number between 0 and 9 and returns a string containing the number (ex.: 0 returns "zero", 1 returns "one")​</li>
+</ul>
+<script>
+
+function testMe(){        
+        const First=1
+        const Second=2
+        const Third=5 
+        return First*Second*Third
+    }   
+
+function AI(greetings){
+    if(greetings == "hello"){
+        return "hi"
+    } else {
+        return "I cannot understand"
+    }
+}
+
+function tripleSum(n1,n2,n3){
+    return n1*n2*n3
+}
+
+function factorial(n){  
+let p=1
+    while(n>0){
+    p= p*n
+    n= n-1}
+
+return p}
+
+function factorial2(num) {
+  if (num < 0) 
+        return -1;
+  else if (num == 0) 
+      return 1;
+  else {
+      return (num * factorial2(num - 1)); 
+}
+}
+
+function calculator(n1,n2,op){
+    if (op ==="-")
+        return n1-n2;
+    else if (op ==="+")
+        return n1+n2;
+    else if(op ==="/")
+        return n1/n2;
+    else(op ==="*")
+        return n1*n2;
+}
+
+function absolute(n){
+    if(n>0)
+        return n
+    else(n<0)
+        return -n
+}
+
+function fizzBuzz(x){
+    if (x%3 == 0 && x%7 == 0)
+    return "fizzBuzz"
+    else if (x%3 == 0)
+    return "fizz"
+    else if (x%7 == 0)
+    return "buzz"
+    else
+    return x
+
+}
+
+function positive(x){
+    if(x>0)
+    return true
+    else 
+    return false
+}
+
+function transform(x){
+    if(x==1)
+    return "one"
+    else if(x==2)
+    return "two"
+    else if(x==3)
+    return "three"
+    else if (x==4)
+    return "four"
+    else if(x==5)
+    return "five"
+    else if(x==6)
+    return "six"
+    else if(x==7)
+    return "seven"
+    else if(x==8)
+    return "eight"
+    else if(x==9)
+    return "nine"
+    else(x<1 || x>9)
+    return "Sorry insert a number between 1 and 9!"
+}
+
+
+    </script>
+
+</body>
+
+</html>
